@@ -1,5 +1,6 @@
 /** Stable, user-safe error codes returned by the API. */
 export const ERROR_CODES = {
+  INTERNAL_ERROR: 'INTERNAL_ERROR',
   VALIDATION_FAILED: 'VALIDATION_FAILED',
   UNAUTHORIZED: 'UNAUTHORIZED',
   FORBIDDEN: 'FORBIDDEN',

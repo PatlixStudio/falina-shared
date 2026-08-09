@@ -13,9 +13,6 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "declarationMap": true,
-    "composite": true,
     "types": []
   },
   "include": ["src/**/*.ts"]

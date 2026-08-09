@@ -4,12 +4,21 @@
   "private": true,
   "description": "Falina shared contracts: types, models, constants, validation for falina-web and falina-api.",
   "license": "UNLICENSED",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src"],
   "scripts": {
+    "prepare": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "typescript": "~6.0.3"
+    "typescript": "~5.7.3"
   }
 }
