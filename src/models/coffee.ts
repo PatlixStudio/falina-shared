@@ -1,4 +1,5 @@
 import type { CoffeeIntent } from '../types/intention';
+import type { CoffeeSymbolDrawn } from './reading';
 
 /** Dense vs sparse coffee-ground density per cup region. */
 export interface PatternDensity {
@@ -22,6 +23,12 @@ export interface CoffeeObservation {
 export interface CoffeeVisionResult {
   observations: CoffeeObservation[];
   patternDensity: PatternDensity;
+}
+
+/** Server response from `POST /readings/coffee/analyze`. */
+export interface CoffeeAnalyzeResult {
+  vision: CoffeeVisionResult;
+  symbols: CoffeeSymbolDrawn[];
 }
 
 /** Canonical coffee-ground symbol from the symbol database. */

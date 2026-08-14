@@ -7,7 +7,8 @@ export type { EntitlementCode };
 export const FREE_LIMITS = {
   coffeeReadingsPerDay: 2,
   tarotReadingsPerDay: 1,
-  tarotSpreads: ['one-card', 'three-past-present-future'] as string[],
+  astrologyReadingsPerDay: 1,
+  tarotSpreads: ['one-card', 'three-past-present-future', 'five-card'] as string[],
   oracleFollowupsPerReading: 3,
   historyDays: 30,
 } as const;

@@ -18,3 +18,9 @@ export type CardOrientation = 'UPRIGHT' | 'REVERSED';
 
 /** Canonical spread position role within a spread. */
 export type SpreadPosition = string;
+
+/** A card the reader picks themselves from the deck before a reading. */
+export interface SelectedTarotCard {
+  cardId: string;
+  orientation?: 'UPRIGHT' | 'REVERSED';
+}

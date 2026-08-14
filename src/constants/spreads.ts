@@ -22,6 +22,22 @@ export const TAROT_SPREADS: readonly SpreadDefinition[] = [
     cardCount: 5,
     positions: ['situation', 'challenge', 'hidden-influence', 'advice', 'outcome'],
   },
+  {
+    code: 'celtic-cross',
+    cardCount: 10,
+    positions: [
+      'self',
+      'crossing',
+      'foundation',
+      'recent-past',
+      'crown',
+      'immediate-future',
+      'self-attitude',
+      'environment',
+      'hopes-fears',
+      'outcome',
+    ],
+  },
 ];
 
 export function findSpread(code: string): SpreadDefinition | undefined {

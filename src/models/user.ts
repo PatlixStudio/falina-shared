@@ -7,6 +7,8 @@ export interface User {
   id: string;
   email: string;
   role: 'USER' | 'ADMIN';
+  plan: 'FREE' | 'PREMIUM';
+  displayName: string;
   createdAt: string;
   updatedAt: string;
 }
